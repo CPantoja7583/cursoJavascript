@@ -1,0 +1,60 @@
+Ejercicio Práctico: Cálculo del Área de un Círculo con JavaScript
+
+Actividad Práctica – Cálculo del Área de un Círculo con JavaScript
+En esta actividad pondrás en práctica conceptos básicos de JavaScript y manipulación del DOM, aplicados a un ejercicio sencillo de matemáticas. El objetivo es que aprendas a interactuar con el usuario mediante cuadros de diálogo, realizar operaciones con el objeto Math y mostrar resultados tanto en consola, como en alertas y en la propia página web. Además, consolidarás el uso de prompt, console.log, window.alert y document.getElementById.
+
+Descripción de la Tarea
+Debes desarrollar una pequeña aplicación web que calcule el área de un círculo aplicando la fórmula:
+
+A
+ˊ
+r
+e
+a
+=
+π
+×
+r
+2
+Aˊrea=π×r2
+donde el radio se obtiene a partir del diámetro ingresado por el usuario.
+
+Los pasos a realizar son:
+
+Crear un archivo index.html con la estructura básica de un documento HTML y un <div> con un id para mostrar el resultado.
+
+Crear un archivo app.js que:
+
+Solicite al usuario el diámetro del círculo con prompt().
+
+Calcule el radio como la mitad del diámetro.
+
+Obtenga el área utilizando Math.PI y Math.pow(radio, 2).
+
+Muestre el resultado en:
+
+La consola (console.log()).
+
+Una ventana emergente (window.alert()).
+
+La página web usando document.getElementById(...).innerHTML.
+
+Vincular app.js a index.html usando <script src="app.js"></script>.
+
+⚠️ El archivo PDF que se adjunta contiene ejemplos visuales y explicaciones complementarias que debes revisar antes de comenzar la tarea.
+
+Tiempo aproximado
+30 a 40 minutos.
+
+Forma de entrega
+Subir el proyecto comprimido en un archivo .zip (incluyendo index.html y app.js), o
+
+Subir las capturas de pantalla solicitadas en formato PDF.
+
+Fecha de entrega
+Será indicada por el profesor/a en la plataforma Moodle.
+
+ 
+Ejercicio cálculo del área de un círculo con JS.pdf Ejercicio cálculo del área de un círculo con JS.pdf29 de septiembre de 2025, 04:40
+ 
+Recurso_visual_de_apoyo9_area_circulo_v2.pdf Recurso_visual_de_apoyo9_area_circulo_v2.pdf1 de octubre de 2025, 19:38

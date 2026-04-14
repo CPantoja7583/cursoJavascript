@@ -1,0 +1,39 @@
+Ejercicio Práctico- Identificación del Mayor y Menor con Ordenamiento Burbuja
+
+Actividad de Aprendizaje – Identificación del Mayor y Menor con Ordenamiento Burbuja
+ Objetivo
+Desarrollar un programa en JavaScript que lea tres valores ingresados por el usuario, determine el mayor y el menor número, y maneje el caso especial en que los tres valores sean iguales. Con este ejercicio reforzarás el uso de arrays, ciclos (for, do-while), condicionales y el método de ordenamiento burbuja.
+
+ Introducción
+El ordenamiento burbuja es uno de los algoritmos más simples para organizar datos en un arreglo, y aunque no es el más eficiente, resulta útil para comprender cómo funcionan las comparaciones y los intercambios de valores dentro de una lista. En esta práctica aplicarás dicho algoritmo a tres valores, para identificar rápidamente el mayor y el menor, y reconocerás cómo manejar condiciones especiales, como cuando todos los números son iguales.
+
+ Descripción de la tarea
+
+Descarga el archivo PDF con las instrucciones detalladas y ejemplos de apoyo.
+
+Crea un archivo HTML con la estructura básica de un documento web.
+
+Crea el archivo app.js y enlázalo al HTML con <script src="app.js"></script>.
+
+Solicita al usuario ingresar 3 números mediante prompt().
+
+Convierte los valores ingresados a números flotantes usando parseFloat().
+
+Almacénalos dentro de un array utilizando array.push().
+
+Implementa el ordenamiento burbuja usando un ciclo do-while, comparando elementos consecutivos y realizando los intercambios necesarios hasta ordenar el array.
+
+Determina el mayor valor con array[array.length - 1] y el menor con array[0].
+
+Si el menor y el mayor son iguales, muestra un mensaje indicando que los tres números ingresados son idénticos.
+
+Muestra el resultado por pantalla con document.write() o alert().
+
+ Tiempo estimado: 25–30 minutos.
+ Forma de entrega: Sube un archivo comprimido .zip con tu proyecto (index.html y app.js) a la plataforma Moodle.
+ Fecha de entrega: Será indicada por el profesor en Moodle.
+
+ 
+Ordenamiento Burbuja.pdf Ordenamiento Burbuja.pdf29 de septiembre de 2025, 05:22
+ 
+Recurso Visual de Apoyo 12.pdf Recurso Visual de Apoyo 12.pdf1 de octubre de 2025, 20:42

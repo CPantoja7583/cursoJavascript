@@ -1,0 +1,59 @@
+Ejercicio Práctico -Conteo de vocales
+Ejercicio Práctico – Conteo de Vocales en Palabras
+ Introducción
+En este ejercicio aplicarás funciones en JavaScript para procesar cadenas y arreglos. La actividad te permitirá afianzar conceptos como funciones expresivas, bucles de iteración, uso de métodos como toLowerCase(), includes() y join(). El desafío consiste en solicitar al usuario ingresar un número de palabras de su elección, almacenarlas en una lista y determinar la cantidad total de vocales presentes.
+
+Este tipo de práctica es fundamental para mejorar la lógica de programación y el manejo de estructuras de datos, elementos clave en el desarrollo de aplicaciones.
+
+ Objetivo
+Desarrollar un programa en JavaScript que, a partir de palabras ingresadas por el usuario, cuente la cantidad de vocales presentes en el conjunto total, utilizando funciones expresivas y métodos de manipulación de cadenas y arreglos.
+
+ Descripción de la Tarea
+Preparación del entorno
+
+Crea un nuevo archivo HTML con la estructura básica.
+
+Crea el archivo app.js y enlázalo en el HTML con <script src="app.js"></script>.
+
+Ingreso de datos
+
+Solicita al usuario cuántas palabras desea ingresar mediante el método prompt().
+
+Solicita las palabras y almacénalas en un array.
+
+Función de conteo de vocales
+
+Define una función expresiva llamada contarVocales(palabra) que recorra cada carácter y verifique si corresponde a una vocal.
+
+Usa toLowerCase() para evitar problemas entre mayúsculas y minúsculas.
+
+Utiliza el método includes() para comparar cada carácter contra un conjunto de vocales definido en un array.
+
+Unificación de palabras y recorrido total
+
+Combina todas las palabras de la lista en una sola cadena usando join("").
+
+Aplica la función de conteo sobre esta cadena para obtener el total de vocales.
+
+Salida de resultados
+
+Muestra el resultado en la consola con console.log().
+
+Muestra el resultado en una alerta usando window.alert().
+
+Inserta el resultado en tu página HTML con document.getElementById("resultado").innerHTML.
+
+ Tiempo estimado
+Entre 40 y 60 minutos, considerando la creación de archivos, codificación, pruebas y corrección de errores.
+
+ Forma de entrega
+El alumno deberá subir un archivo comprimido (.zip) con los siguientes elementos:
+
+El archivo HTML.
+
+El archivo app.js con la lógica implementada.
+
+Opcional: capturas de pantalla mostrando la ejecución del programa en navegador.
+
+ Fecha de entrega
+Será determinada y comunicada por el profesor en la plataforma.

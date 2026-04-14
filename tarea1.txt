@@ -1,0 +1,59 @@
+En este ejercicio práctico vas a crear un programa que inserte código JavaScript desde un archivo separado. El código debe utilizar el método window.alert() para mostrar en el navegador un cuadro de alerta con la frase:
+
+👉 “¡Hola Mundo!”
+
+Paso 1: Crear el archivo HTML
+Abre tu editor de texto y crea un nuevo archivo llamado EP2.html.
+
+Incluye los elementos básicos de la estructura HTML:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Práctico 2</title>
+</head>
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
+💡 Ejemplo de estructura de archivos en el explorador
+
+Carpeta del proyecto
+
+EP2.html
+
+app.js (se creará en el siguiente paso)
+
+Paso 2: Crear el archivo JavaScript
+En la misma carpeta del proyecto, crea un archivo llamado app.js.
+
+Escribe el siguiente código:
+
+// Este es un método para devolver un cuadro de alerta
+window.alert("¡Hola mundo!");
+💡 Ejemplo de código en app.js
+
+Línea 1: Comentario explicativo.
+
+Línea 2: Método window.alert() que muestra el mensaje.
+
+Paso 3: Probar en el navegador
+Guarda los cambios.
+
+Abre EP2.html en tu navegador.
+
+Deberías ver un cuadro de alerta con el mensaje ¡Hola Mundo!.
+
+👉 Si no aparece, revisa que el nombre del archivo app.js esté bien escrito y que la ruta en la etiqueta <script> sea correcta.
+
+Recurso adicional
+Puedes revisar la documentación oficial del método window.alert() en:
+MDN Web Docs – window.alert()
+
+Entrega
+Formato: sube tu proyecto comprimido (.zip) o comparte el link a tu repositorio en GitHub.
+
+Tiempo estimado: 15–20 minutos.
+
+Fecha de entrega: será indicada por el/la profesor(a) en Moodle.

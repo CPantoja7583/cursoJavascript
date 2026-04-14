@@ -1,0 +1,63 @@
+/* Base: Mobile First */
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+/* Flexbox en el header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* CSS Grid: columna única en móvil */
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet: 768px */
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/* Desktop: 1024px */
+@media (min-width: 1024px) {
+  section {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+}
