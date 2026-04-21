@@ -1,0 +1,90 @@
+Ejercicio Práctico - Clases y Objetos
+
+Modelando con Clases y Objetos en JavaScript
+Introducción y objetivo
+En esta actividad pondrás en práctica los conceptos básicos de la programación orientada a objetos (POO) en JavaScript. Aprenderás a definir clases con atributos y métodos, así como a crear objetos a partir de ellas. El objetivo es que puedas modelar entidades de la vida real y simular sus características y comportamientos en un programa sencillo.
+
+Descripción de la tarea
+Deberás desarrollar las siguientes actividades:
+
+Clase Alumno
+
+Define una clase que modele a un alumno de una institución educacional.
+
+Incluye atributos como nombre, edad, carrera, entre otros.
+
+Agrega un método que muestre ordenadamente todos sus atributos.
+
+👉 Comando guía
+
+class Alumno {
+  constructor(nombre, edad, carrera) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.carrera = carrera;
+  }
+
+  mostrarInfo() {
+    console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Carrera: ${this.carrera}`);
+  }
+}
+Clase Banda Musical
+
+Define una clase que represente a una banda musical.
+
+Incluye atributos como nombre, genero, integrantes y discos.
+
+Agrega un método para mostrar todos los atributos y otro para listar solo los discos publicados.
+
+Instancia un objeto de la clase con los datos de tu banda favorita.
+
+👉 Comando guía
+
+class BandaMusical {
+  constructor(nombre, genero, integrantes, discos) {
+    this.nombre = nombre;
+    this.genero = genero;
+    this.integrantes = integrantes;
+    this.discos = discos; // Array
+  }
+
+  mostrarInfo() {
+    console.log(`Banda: ${this.nombre}, Género: ${this.genero}, Integrantes: ${this.integrantes}`);
+  }
+
+  listarDiscos() {
+    console.log("Discos:", this.discos.join(", "));
+  }
+}
+Clase Perro
+
+Define una clase que modele a un perro.
+
+Incluye atributos como nombre, raza, edad, etc.
+
+Agrega un método para mostrar todos sus atributos y otro para “ladrar”.
+
+Instancia un objeto de la clase con los datos de tu perro o de un perro famoso (ejemplo: el perro Lipigas).
+
+👉 Comando guía
+
+class Perro {
+  constructor(nombre, raza, edad) {
+    this.nombre = nombre;
+    this.raza = raza;
+    this.edad = edad;
+  }
+
+  mostrarInfo() {
+    console.log(`Nombre: ${this.nombre}, Raza: ${this.raza}, Edad: ${this.edad}`);
+  }
+
+  ladrar() {
+    console.log("¡Guau guau!");
+  }
+}
+Tiempo estimado de trabajo
+ 60  minutos, dependiendo del nivel de práctica previa con JavaScript.
+
+Forma de entrega
+Sube un archivo comprimido .zip que incluya tu archivo HTML y el archivo app.js con las clases desarrolladas.

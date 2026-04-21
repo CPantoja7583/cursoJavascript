@@ -1,0 +1,76 @@
+Ejercicio Práctico - Funciones Callback en JavaScript
+
+Funciones Callback en JavaScript (Validación y Cálculo)
+Introducción / Objetivo
+En esta actividad pondrás en práctica el uso de funciones callback en JavaScript, aplicando validaciones, cálculos matemáticos y manejo de asincronía mediante temporizadores. El objetivo es comprender cómo las funciones pueden ejecutarse como argumentos y responder a diferentes escenarios (éxito o error).
+
+Descripción de la Tarea
+Función validar_numero(callback):
+
+Debe mostrar un prompt solicitando al usuario ingresar un número.
+
+Una vez ingresado, validar si efectivamente es un número.
+
+Llamar al callback para mostrar un mensaje:
+
+Correcto si el dato es válido.
+
+Error si se ingresaron caracteres no numéricos (ejemplo: “Usted ingresó caracteres incorrectos”).
+
+Función calcular_y_avisar_despues(numero, callback):
+
+Calcular la sumatoria de números impares entre 1 y numero.
+
+Esperar 5 segundos y luego ejecutar el callback.
+
+El callback debe mostrar el mensaje:
+
+“El valor de la sumatoria es N. Este resultado se obtuvo hace 5 segundos”.
+
+Función calcular_y_avisar_dependiendo(numero, callback, callback_error):
+
+Calcular las sumatorias sucesivas desde 1 hasta numero.
+
+Ejemplo con numero = 5:
+
+1  
+1 + 2  
+1 + 2 + 3  
+1 + 2 + 3 + 4  
+1 + 2 + 3 + 4 + 5  → Resultado total = 35
+Si el resultado es menor a 1000, se debe llamar al callback, mostrando:
+
+“Las sumatorias sucesivas de número es resultado”.
+
+Si el resultado es 1000 o más, se debe llamar al callback_error, indicando que el número sobrepasa el objetivo de la función, y mostrando de todas formas el resultado obtenido.
+
+⚠️ Nota: Revisa el archivo PDF adjunto en Moodle, donde se muestran ejemplos gráficos de cómo podrían visualizarse los mensajes (ventanas de ingreso de datos y salidas de validación).
+
+Guías y Sugerencias Técnicas
+Para solicitar datos al usuario:
+
+let dato = prompt("Ingrese un número:");
+Para verificar si es un número válido:
+
+if (!isNaN(dato)) {
+    // Es un número
+} else {
+    // Error
+}
+Para temporizar ejecuciones con callback:
+
+setTimeout(() => {
+    callback(resultado);
+}, 5000);
+Para recorrer sumatorias sucesivas, apóyate en bucles for.
+
+Usa console.log() para mostrar los mensajes antes de implementarlos en interfaz gráfica.
+
+Forma de Entrega
+Sube un archivo comprimido (.zip) que contenga:
+
+El código fuente JavaScript.
+
+Una o más páginas HTML donde se implementen las funciones solicitadas.
+
+Evidencias (pantallazos) del funcionamiento de las validaciones y cálculos.

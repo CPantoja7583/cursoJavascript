@@ -1,0 +1,79 @@
+RETO (NO OBLIGATORIO) Ejercicio Práctico - Manejo de Promesas en JavaScript
+Manejo de Promesas en JavaScript
+Introducción / Objetivo
+Las promesas en JavaScript permiten manejar operaciones asincrónicas de manera clara y estructurada. En esta actividad trabajarás con promesas aplicadas a validaciones, consultas simuladas y ejecución de procesos que pueden generar retrasos. El objetivo es comprender cómo crear, resolver y rechazar promesas, así como interpretar los mensajes que aparecen en consola en distintos escenarios.
+
+Descripción de la Tarea
+Promesa con setTimeout:
+
+Programa una promesa que utilice la función setTimeout() para simular una petición a una base de datos.
+
+El callback resolve deberá entregar un objeto Persona con todos sus datos (ejemplo:
+
+{ nombre: "Mario", apellido: "Ross", edad: 55, lugar: "Mushroom Kingdom" }
+).
+
+En consola deberían aparecer mensajes similares a los cuadros de ejemplo:
+
+“Creando promesa”
+
+“Registrando promesa”
+
+“Esperando respuesta”
+
+“Respuesta: { …datos de Persona… }”
+
+Promesa que depende de los segundos actuales:
+
+Crea una promesa que verifique los segundos actuales del sistema y:
+
+Si son más de 30 segundos:
+
+Si el número es PAR, resolver con la hora actual.
+
+Si el número es IMPAR, rechazar con un error.
+
+Si son 30 segundos o menos:
+
+Si el número es IMPAR, resolver con la hora actual.
+
+Si el número es PAR, rechazar con un error.
+
+Promesa con proceso pesado:
+
+Programa una promesa que ejecute un bloque de código suficientemente pesado como para enlentecer el navegador durante algunos segundos.
+
+Registra en consola los mensajes antes, durante y después de la operación.
+
+Reflexiona en los comentarios de tu código sobre el delay observado y por qué ocurre la demora en la aparición de los mensajes.
+
+⚠️ Nota: Descarga el archivo PDF adjunto en Moodle para visualizar los cuadros de ejemplo que muestran los mensajes en consola durante la ejecución de las promesas.
+
+Guías y Sugerencias Técnicas
+Sintaxis básica de una promesa:
+
+let promesa = new Promise((resolve, reject) => {
+    // lógica
+});
+Uso de setTimeout() para simular consultas asincrónicas:
+
+setTimeout(() => resolve("Respuesta lista"), 3000);
+Captura de resultados:
+
+promesa.then(resultado => console.log(resultado))
+       .catch(error => console.error(error));
+Obtención de la hora del sistema:
+
+let fecha = new Date();
+console.log(fecha.toLocaleTimeString());
+Para procesos pesados, experimenta con bucles grandes:
+
+for (let i = 0; i < 1e9; i++) { /* proceso */ }
+Forma de Entrega
+Sube un archivo comprimido (.zip) que contenga:
+
+El código fuente JavaScript.
+
+Una o más páginas HTML que ejecuten los ejemplos de promesas.
+
+Evidencias (pantallazos) de los mensajes mostrados en consola.

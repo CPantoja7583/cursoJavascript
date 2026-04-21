@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 4 - DOM</title>
+  <link rel="stylesheet" href="actividad4.css">
+</head>
+<body>
+  <h1>Actividad de aprendizaje: DOM</h1>
+
+  <!-- Ejercicio 1: REPETIR -->
+  <section class="ejercicio">
+    <h2>1. Repetir</h2>
+    <label>Palabra: <input type="text" id="palabra" value="Hola"></label><br>
+    <label>Cuántas veces? <input type="number" id="veces" value="8"></label><br>
+    <button onclick="repetir()">REPETIR!</button>
+    <p id="resultado-repetir"></p>
+  </section>
+
+  <!-- Ejercicio 2: APLICAR -->
+  <section class="ejercicio">
+    <h2>2. Aplicar color</h2>
+    <label>Elija un color: <input type="color" id="color" value="#00ff00"></label><br>
+    <button onclick="aplicarColor()">APLICAR!</button>
+    <p id="parrafo-color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique possimus incidunt ducimus officiis tempore blanditiis sapiente perferendis non. Eligendi corrupti eveniet quae saepe eaque itaque labore fugiat tempora, consequatur quam?</p>
+  </section>
+
+  <!-- Ejercicio 3: CALCULAR -->
+  <section class="ejercicio">
+    <h2>3. Calcular</h2>
+    <label>Ingrese un número <input type="number" id="num1" value="5"></label><br>
+    <label>Ingrese otro número <input type="number" id="num2" value="10"></label><br>
+    <button onclick="calcular()">CALCULAR!</button>
+    <div id="resultado-calcular"></div>
+  </section>
+
+  <!-- Ejercicio 4: INVERTIR -->
+  <section class="ejercicio">
+    <h2>4. Invertir</h2>
+    <label>Ingrese algo <input type="text" id="texto" value="Holanda que talca"></label><br>
+    <button onclick="invertir()">INVERTIR!</button>
+    <p id="resultado-invertir"></p>
+  </section>
+
+  <script src="actividad4.js"></script>
+</body>
+</html>
