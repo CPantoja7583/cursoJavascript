@@ -1,0 +1,129 @@
+Ejercicio: Sistema para una Clinica Veterinaria
+
+1. Listado de entidades identificadas en el relato
+
+- Cliente
+- Mascota
+- Veterinario
+- Consulta
+- Medicamento
+- Receta
+- Producto
+- Compra
+- DetalleCompra
+
+2. Atributos de cada entidad, marcando la clave primaria
+
+Cliente
+- PK: rut_cliente
+- nombre_completo
+- telefono
+- email
+- direccion
+
+Mascota
+- PK: codigo_mascota
+- nombre
+- especie
+- raza
+- fecha_nacimiento_aprox
+- sexo
+- esterilizada
+- FK: rut_cliente
+
+Veterinario
+- PK: rut_veterinario
+- nombre
+- especialidad
+- telefono
+- correo
+
+Consulta
+- PK: id_consulta
+- fecha_hora
+- motivo
+- diagnostico
+- observaciones
+- FK: codigo_mascota
+- FK: rut_veterinario
+
+Medicamento
+- PK: id_medicamento
+- nombre
+- laboratorio
+- presentacion
+- stock_actual
+
+Receta
+- PK: id_receta
+- FK: id_consulta
+- FK: id_medicamento
+- dosis
+- duracion_tratamiento
+
+Producto
+- PK: codigo_producto
+- nombre
+- precio
+- stock
+
+Compra
+- PK: id_compra
+- fecha
+- total
+- FK: rut_cliente
+
+DetalleCompra
+- PK: id_detalle_compra
+- FK: id_compra
+- FK: codigo_producto
+- cantidad
+
+3. Relaciones entre las entidades
+
+- Cliente "posee" Mascota
+- Mascota "registra" Consulta
+- Veterinario "atiende" Consulta
+- Consulta "genera" Receta
+- Medicamento "es recetado en" Receta
+- Cliente "realiza" Compra
+- Compra "incluye" DetalleCompra
+- Producto "forma parte de" DetalleCompra
+
+4. Cardinalidad de cada relacion
+
+- Cliente - Mascota: 1:N
+  Un cliente puede tener varias mascotas y cada mascota pertenece a un solo cliente.
+
+- Mascota - Consulta: 1:N
+  Una mascota puede tener muchas consultas y cada consulta corresponde a una sola mascota.
+
+- Veterinario - Consulta: 1:N
+  Un veterinario atiende muchas consultas y cada consulta es atendida por un solo veterinario.
+
+- Consulta - Receta: 1:N
+  Una consulta puede generar cero, una o varias recetas de medicamentos.
+
+- Medicamento - Receta: 1:N
+  Un medicamento puede aparecer en muchas recetas distintas.
+
+- Cliente - Compra: 1:N
+  Un cliente puede realizar muchas compras y cada compra pertenece a un solo cliente.
+
+- Compra - DetalleCompra: 1:N
+  Una compra puede incluir varios productos.
+
+- Producto - DetalleCompra: 1:N
+  Un producto puede aparecer en muchos detalles de compra.
+
+5. Relaciones N:M resueltas con entidades puente
+
+- Consulta - Medicamento: N:M
+  Se resuelve con la entidad Receta, porque en una consulta se pueden recetar varios medicamentos y un medicamento puede recetarse en muchas consultas. Ademas, Receta guarda dosis y duracion_tratamiento.
+
+- Compra - Producto: N:M
+  Se resuelve con la entidad DetalleCompra, porque una compra puede incluir varios productos y un producto puede estar en muchas compras. DetalleCompra guarda la cantidad.
+
+6. Resumen del modelo
+
+El sistema queda compuesto por entidades principales de personas, mascotas, atenciones, medicamentos y ventas. Las entidades Receta y DetalleCompra son necesarias para representar correctamente las relaciones muchos a muchos y almacenar los datos adicionales que exige el caso.
